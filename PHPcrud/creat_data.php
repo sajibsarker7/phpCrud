@@ -13,7 +13,7 @@ if (isset($_REQUEST['name']) & isset($_REQUEST['email']) & isset($_REQUEST['pass
        header("location:index.php?action=false");
     }
 
-             $InsertQuery ="INSERT INTO showcase ( Name, Email, Password) Values ('$name','$email','$pass')";
+             $InsertQuery ="INSERT INTO Dbname ( Name, Email, Password) Values ('$name','$email','$pass')";
             $runQuery =mysqli_query($connect,$InsertQuery);
     
 
